@@ -118,7 +118,7 @@
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__email">
           <p class="contacts__paragraph">e-mail:</p>
-          <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimishkashop.ru</a>
+          <a href="mailto:info@mimimishkashop.ru" class="contacts__link">info@mimishkashop.ru</a>
         </div>
         <div class="contacts__address">
           <p class="contacts__paragraph">адрес:</p>
@@ -154,7 +154,7 @@
       <section class="copyright">
         <h2 class="visually-hidden">Информация о разработчике</h2>
         <p class="copyright__designed-by">Разработано</p>
-        <a href="http://htmlacademy.ru" class="copyright__link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </section>
@@ -163,19 +163,19 @@
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__intro">Выберите размер:</p>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <ul class="modal__list sizes-list">
           <li class="sizes-list__item">
             <label class="sizes-list__label visually-hidden" for="small-field">Маленький размер</label>
-            <input class="sizes-list__input sizes-list__input--small visually-hidden" type="radio" name="small" value="small" id="small-field" checked>
+            <input class="sizes-list__input sizes-list__input--small visually-hidden" type="radio" name="size" value="small" id="small-field" checked>
           </li>
           <li class="sizes-list__item">
             <label class="sizes-list__label visually-hidden" for="middle-field">Средний размер</label>
-            <input class="sizes-list__input sizes-list__input--middle visually-hidden" type="radio" name="middle" value="middle" id="middle-field">
+            <input class="sizes-list__input sizes-list__input--middle visually-hidden" type="radio" name="size" value="middle" id="middle-field">
           </li>
           <li class="sizes-list__item">
             <label class="sizes-list__label visually-hidden" for="large-field">Большой размер</label>
-            <input class="sizes-list__input sizes-list__input--large visually-hidden" type="radio" name="large" value="large" id="large-field">
+            <input class="sizes-list__input sizes-list__input--large visually-hidden" type="radio" name="size" value="large" id="large-field">
           </li>
         </ul>
         <button class="modal__submit ghost-button ghost-button--add-to-cart" type="submit">Добавить</button>
