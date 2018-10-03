@@ -14,22 +14,20 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--search">
-              <a href="#" class="site-list__link">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--cart">
-              <a href="#" class="site-list__link">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="site-list main-nav__list">
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--search">
+            <a href="#" class="site-list__link">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item site-list__item--cart">
+            <a href="#" class="site-list__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -40,15 +38,15 @@
         <h2 class="visually-hidden">Разделы магазина</h2>
         <ul class="store-sections__list">
           <li class="store-sections__items">
-            <a href="#" class="button-green button-green--left">Предметы интерьера</a>
+            <a href="#" class="store-sections__button store-sections__button--primary">Предметы интерьера</a>
           </li>
           <li class="store-sections__items">
-            <a href="#" class="button-green button-green--right">Детские игрушки</a>
+            <a href="#" class="store-sections__button store-sections__button--secondary">Детские игрушки</a>
           </li>
         </ul>
       </section>
 
-      <section class="weeks-bestseller">
+      <article class="weeks-bestseller">
         <h2 class="weeks-bestseller__title">Вязаные корзинки</h2>
         <p class="weeks-bestseller__main-title">Товар недели</p>
         <p class="weeks-bestseller__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -68,50 +66,36 @@
         </table>
         <img class="weeks-bestseller__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото вязаных корзинок">
         <b class="weeks-bestseller__price">Цена: 990 руб.</b>
-        <a href="#" class="weeks-bestseller__order-button ghost-button">Заказать</a>
-      </section>
+        <a href="#" class="ghost-button weeks-bestseller__order-button">Заказать</a>
+      </article>
 
       <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="advantages__title">Коротко о нас:</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--ecology">
-              <p class="advantages__description">Экологически чистые материалы</p>
-            </li>
-            <li class="advantages__item advantages__item--good-price">
-              <p class="advantages__description">Скандинавский стиль по российской цене</p>
-            </li>
-            <li class="advantages__item advantages__item--more-likes">
-              <p class="advantages__description">Увеличивает лайки на фотографиях</p>
-            </li>
-            <li class="advantages__item advantages__item--handmade">
-              <p class="advantages__description">Связано вручную с любовью и умилением</p>
-            </li>
-            <li class="advantages__item advantages__item--russian-produced">
-              <p class="advantages__description">Поддержка отечественного производителя</p>
-            </li>
-            <li class="advantages__item advantages__item--gift-wrap">
-              <p class="advantages__description">Поставляется в подарочной упаковке</p>
-            </li>
-          </ul>
-        </div>
+        <h2 class="advantages__title">Коротко о нас:</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--ecology">Экологически чистые материалы</li>
+          <li class="advantages__item advantages__item--good-price">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item advantages__item--more-likes">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item advantages__item--handmade">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item advantages__item--russian-produced">Поддержка отечественного производителя</li>
+          <li class="advantages__item advantages__item--gift-wrap">Поставляется в подарочной упаковке</li>
+        </ul>
       </section>
 
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
         <blockquote class="reviews__item">
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-            В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author-name">Анастасия Красильникова</cite>
-          <cite class="reviews__author-account">@misssssiskras</cite>
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+            В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </blockquote>
+        <p class="reviews__author-name">Анастасия Красильникова</p>
+        <p class="reviews__author-account">@misssssiskras</p>
         <button class="reviews__arrow reviews__arrow--left" type="button">
           <span class="visually-hidden">Назад</span>
         </button>
         <button class="reviews__arrow reviews__arrow--right" type="button">
           <span class="visually-hidden">Вперед</span>
         </button>
-        <a href="#" class="reviews__write-us ghost-button">Написать</a>
+        <a href="#" class="ghost-button reviews__write-us">Написать</a>
       </section>
 
       <section class="contacts">
@@ -125,7 +109,7 @@
           <p class="contacts__full-address">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
         </div>
         <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        <a href="#" class="contacts__feedback-button ghost-button">Напишите нам</a>
+        <a href="#" class="ghost-button contacts__feedback-button">Напишите нам</a>
       </section>
     </main>
 
@@ -163,22 +147,22 @@
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__intro">Выберите размер:</p>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <ul class="modal__list sizes-list">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <ul class="sizes-list modal__list">
           <li class="sizes-list__item">
-            <label class="sizes-list__label visually-hidden" for="small-field">Маленький размер</label>
-            <input class="sizes-list__input sizes-list__input--small visually-hidden" type="radio" name="size" value="small" id="small-field" checked>
+            <label class="visually-hidden sizes-list__label" for="small-field">Маленький размер</label>
+            <input class="visually-hidden sizes-list__input sizes-list__input--small" type="radio" name="size" value="small" id="small-field" checked>
           </li>
           <li class="sizes-list__item">
-            <label class="sizes-list__label visually-hidden" for="middle-field">Средний размер</label>
-            <input class="sizes-list__input sizes-list__input--middle visually-hidden" type="radio" name="size" value="middle" id="middle-field">
+            <label class="visually-hidden sizes-list__label" for="middle-field">Средний размер</label>
+            <input class="visually-hidden sizes-list__input sizes-list__input--middle" type="radio" name="size" value="middle" id="middle-field">
           </li>
           <li class="sizes-list__item">
-            <label class="sizes-list__label visually-hidden" for="large-field">Большой размер</label>
-            <input class="sizes-list__input sizes-list__input--large visually-hidden" type="radio" name="size" value="large" id="large-field">
+            <label class="visually-hidden sizes-list__label" for="large-field">Большой размер</label>
+            <input class="visually-hidden sizes-list__input sizes-list__input--large" type="radio" name="size" value="large" id="large-field">
           </li>
         </ul>
-        <button class="modal__submit ghost-button ghost-button--add-to-cart" type="submit">Добавить</button>
+        <button class="ghost-button ghost-button--add-to-cart modal__submit" type="submit">Добавить</button>
       </form>
     </section>
 

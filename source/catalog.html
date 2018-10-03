@@ -14,22 +14,20 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--search">
-              <a href="#" class="site-list__link">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--cart">
-              <a href="#" class="site-list__link">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="site-list main-nav__list">
+          <li class="site-list__item">
+            <a class="site-list__link">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--search">
+            <a href="#" class="site-list__link">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item site-list__item--cart">
+            <a href="#" class="site-list__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -37,21 +35,17 @@
       <h1 class="page-title">Каталог товаров</h1>
 
       <section class="catalog">
-        <h2 class="catalog__title visually-hidden">Каталог</h2>
         <ul class="catalog__list">
-
-
-
           <li class="catalog__item">
             <a href="#" class="catalog__link">
               <img class="catalog__image" src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик">
             </a>
             <h3 class="catalog__item-title">
-              <a href="#" class="catalo__link-title">Зайчик-попрыгайчик</a>
+              <a href="#" class="catalog__link-title">Зайчик-попрыгайчик</a>
             </h3>
             <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
             <div class="catalog__wrapper-bottom">
-                <span class="catalog__item-price">1 200 руб.</span>
+                <span class="catalog__item-price">1&thinsp;200 руб.</span>
                 <a class="catalog__cart-link" href="#">
                   <span class="visually-hidden">Положить в корзину</span>
                 </a>
@@ -62,7 +56,7 @@
               <img class="catalog__image" src="http://placehold.it/150x100" width="150" height="100" alt="Корзинка для белья">
             </a>
             <h3 class="catalog__item-title">
-              <a href="#" class="catalo__link-title">Корзинка для белья</a>
+              <a href="#" class="catalog__link-title">Корзинка для белья</a>
             </h3>
             <p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
             <div class="catalog__wrapper-bottom">
@@ -77,11 +71,11 @@
               <img class="catalog__image" src="http://placehold.it/150x100" width="150" height="100" alt="Большая корзинка для игрушек">
             </a>
             <h3 class="catalog__item-title">
-              <a href="#" class="catalo__link-title">Большая корзинка для игрушек</a>
+              <a href="#" class="catalog__link-title">Большая корзинка для игрушек</a>
             </h3>
             <p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
             <div class="catalog__wrapper-bottom">
-                <span class="catalog__item-price">1 500 руб.</span>
+                <span class="catalog__item-price">1&thinsp;500 руб.</span>
                 <a class="catalog__cart-link" href="#">
                   <span class="visually-hidden">Положить в корзину</span>
                 </a>
@@ -93,13 +87,13 @@
       <section class="making-video">
         <h2 class="making-video__title">Процесс производства</h2>
         <div class="making-video__wrapper">
-          <img src="http://placehold.it/150x100" class="making-video__image">
-          <button class="making-video__play-button" type="button">
+          <img class="making-video__image" src="http://placehold.it/150x100" width="150" height="100" alt="Видео с процессом производства">
+          <a href="#" class="making-video__play-button">
             <span class="visually-hidden">Запустить видео</span>
-          </button>
+          </a>
         </div>
         <p class="making-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a href="#" class="making-video__order-placing ghost-button">Сделать заказ</a>
+        <a href="#" class="ghost-button making-video__order-placing">Сделать заказ</a>
       </section>
     </main>
 
@@ -138,21 +132,21 @@
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__intro">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-        <ul class="modal__list sizes-list">
+        <ul class="sizes-list modal__list">
           <li class="sizes-list__item">
-            <label class="sizes-list__label visually-hidden" for="small-field">Маленький размер</label>
-            <input class="sizes-list__input sizes-list__input--small visually-hidden" type="radio" name="small" value="small" id="small-field" checked>
+            <label class="visually-hidden sizes-list__label" for="small-field">Маленький размер</label>
+            <input class="visually-hidden sizes-list__input sizes-list__input--small" type="radio" name="small" value="small" id="small-field" checked>
           </li>
           <li class="sizes-list__item">
-            <label class="sizes-list__label visually-hidden" for="middle-field">Средний размер</label>
-            <input class="sizes-list__input sizes-list__input--middle visually-hidden" type="radio" name="middle" value="middle" id="middle-field">
+            <label class="visually-hidden sizes-list__label" for="middle-field">Средний размер</label>
+            <input class="visually-hidden sizes-list__input sizes-list__input--middle" type="radio" name="middle" value="middle" id="middle-field">
           </li>
           <li class="sizes-list__item">
-            <label class="sizes-list__label visually-hidden" for="large-field">Большой размер</label>
-            <input class="sizes-list__input sizes-list__input--large visually-hidden" type="radio" name="large" value="large" id="large-field">
+            <label class="visually-hidden sizes-list__label" for="large-field">Большой размер</label>
+            <input class="visually-hidden sizes-list__input sizes-list__input--large" type="radio" name="large" value="large" id="large-field">
           </li>
         </ul>
-        <button class="modal__submit ghost-button ghost-button--add-to-cart" type="submit">Добавить</button>
+        <button class="ghost-button ghost-button--add-to-cart modal__submit" type="submit">Добавить</button>
       </form>
     </section>
 
