@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 320px;
+  margin: 0 auto;
+
+  font-family: $brand-font;
+  font-size: $font-size--body;
+  font-weight: $font-weight--primary;
+  line-height: $line-height--primary;
+
+  outline: 2px solid green;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

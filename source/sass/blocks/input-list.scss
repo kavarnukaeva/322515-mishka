@@ -1,0 +1,27 @@
+.input-list__label {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.input-list__input {
+  display: block;
+  margin-bottom: 25px;
+
+  color: rgba($gray--dark, 0.3%);
+}
+
+.input-list__input--name {
+  margin-bottom: 20px;
+}
+
+.input-list__message {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.input-list__comment-requred {
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: $font-weight--secondary;
+  color: $gray--dark;
+}

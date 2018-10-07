@@ -1,0 +1,46 @@
+.form {
+  padding-bottom: 55px;
+
+  outline: $outline;
+
+  @include centerer;
+}
+
+.form__intro {
+  margin: 0;
+  padding-bottom: 30px;
+
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: $font-weight--secondary;
+  color: $gray--dark;
+
+  @include centerer;
+}
+
+.form__title {
+  margin-bottom: 23px;
+
+  color: $brand-color--light;
+  text-transform: uppercase;
+}
+
+.form__type,
+.form__color,
+.form__client-info {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.form__client-info {
+  margin-bottom: 31px;
+}
