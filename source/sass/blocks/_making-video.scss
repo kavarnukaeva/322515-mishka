@@ -1,0 +1,38 @@
+.making-video {
+  padding-bottom: 33px;
+
+  outline: $outline;
+
+  @include centerer();
+}
+
+.making-video__title {
+  margin: 0;
+  padding: 30px 0 20px 90px;
+
+  font-size: inherit;
+  line-height: 1.4;
+}
+
+.making-video__wrapper {
+  margin-bottom: 35px;
+}
+
+.making-video__description {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 34px;
+  padding-right: 34px;
+
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: $font-weight--secondary;
+  color: $gray--dark;
+}
+
+.making-video__order-placing {
+  margin: 0 auto;
+  max-width: 192px;
+  width: 192px;
+  text-align: center;
+}
