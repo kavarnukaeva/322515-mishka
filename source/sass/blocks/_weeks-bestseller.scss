@@ -4,7 +4,11 @@
 
   outline: $outline;
 
-  @include centerer;
+  @include centerer();
+}
+
+.weeks-bestseller__title {
+  margin: 0;
 }
 
 .weeks-bestseller__main-title {
@@ -48,6 +52,7 @@
 }
 
 .weeks-bestseller__order-button {
+  margin: 0 auto;
   padding-left: 84px;
   padding-right: 85px;
 }

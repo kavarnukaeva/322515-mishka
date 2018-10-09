@@ -1,0 +1,30 @@
+.store-sections {
+  outline: $outline;
+
+  @include centerer-nopaddings();
+}
+
+.store-sections__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.store-sections__items {
+  padding: 30px 184px 30px 28px;
+
+  &--primary {
+    background-color: $brand-color--light;
+  }
+
+  &--secondary {
+    background-color: $brand-color--dark;
+  }
+}
+
+.store-sections__button {
+  font-size: 19px;
+  line-height: 1.3;
+  color: #ffffff;
+}

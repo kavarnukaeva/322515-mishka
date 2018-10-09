@@ -2,4 +2,6 @@
   background-color: $gray;
 
   outline: $outline;
+
+  @include centerer();
 }

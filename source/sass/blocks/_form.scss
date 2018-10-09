@@ -3,11 +3,12 @@
 
   outline: $outline;
 
-  @include centerer;
+  @include centerer();
 }
 
 .form__intro {
   margin: 0;
+  padding-top: 30px;
   padding-bottom: 30px;
 
   font-size: 13px;
@@ -15,7 +16,7 @@
   font-weight: $font-weight--secondary;
   color: $gray--dark;
 
-  @include centerer;
+  @include centerer();
 }
 
 .form__title {
@@ -43,4 +44,8 @@
 
 .form__client-info {
   margin-bottom: 31px;
+}
+
+.form__submit {
+  margin: 0 auto;
 }

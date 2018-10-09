@@ -3,10 +3,12 @@
   padding-bottom: 39px;
 
   outline: $outline;
+
+  @include centerer-nopaddings();
 }
 
 .contacts__wrapper {
-  @include centerer;
+  padding: 0 30px;
 }
 
 .contacts__title {
@@ -50,6 +52,7 @@
 }
 
 .contacts__feedback-button {
+  margin: 0 auto;
   padding-left: 51px;
   padding-right: 51px;
   width: 260px;

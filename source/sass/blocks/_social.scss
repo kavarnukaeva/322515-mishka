@@ -2,7 +2,7 @@
   padding-top: 25px;
   padding-bottom: 27px;
 
-  @include centerer;
+  @include centerer();
 }
 
 .social__list {

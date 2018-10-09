@@ -1,7 +1,7 @@
 .catalog {
   outline: $outline;
 
-  @include centerer;
+  @include centerer();
 }
 
 .catalog__list {

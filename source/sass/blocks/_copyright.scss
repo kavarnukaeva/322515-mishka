@@ -5,5 +5,5 @@
 
   font-size: 19px;
 
-  @include centerer;
+  @include centerer();
 }

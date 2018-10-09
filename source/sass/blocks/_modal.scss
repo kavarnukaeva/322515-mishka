@@ -3,7 +3,7 @@
 
   outline: $outline;
 
-  @include centerer;
+  @include centerer();
 }
 
 .modal__title {
@@ -23,4 +23,9 @@
   font-weight: $font-weight--secondary;
   color: $gray--dark;
   text-align: center;
+}
+
+.modal__list {
+  margin: 0;
+  margin-bottom: 31px;
 }

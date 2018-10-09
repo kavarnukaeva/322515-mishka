@@ -14,11 +14,6 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
-            <rect fill="#231F20" width="19.958" height="2"/>
-            <rect y="6" fill="#231F20" width="19.958" height="2"/>
-            <rect y="12" fill="#231F20" width="19.958" height="2"/>
-          </svg>
         </button>
         <ul class="site-list main-nav__list">
           <li class="site-list__item">
@@ -38,7 +33,11 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-title page-title--index">Милые штуки<br> ручной<br> работы для дома</h1>
+      <h1 class="page-title page-title--index">
+        <span class="page-title--index-title">Милые штуки</span>
+        <span class="page-title--index-title">ручной</span>
+        <span class="page-title--index-title">работы для дома</span>
+      </h1>
 
       <section class="store-sections">
         <h2 class="visually-hidden">Разделы магазина</h2>
@@ -75,7 +74,7 @@
         <a href="#" class="ghost-button weeks-bestseller__order-button">Заказать</a>
       </article>
 
-      <section class="advantages">
+      <section class="advantages page-main__advantages">
         <h2 class="index-titles advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--ecology">Экологически чистые материалы</li>
@@ -98,15 +97,9 @@
         <div class="reviews__arrow-wrapper">
           <button class="reviews__arrow reviews__arrow--left" type="button">
             <span class="visually-hidden">Назад</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-              <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
-            </svg>
           </button>
           <button class="reviews__arrow reviews__arrow--right" type="button">
             <span class="visually-hidden">Вперед</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-              <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
-            </svg>
           </button>
         </div>
         <a href="#" class="ghost-button reviews__write-us">Написать</a>
@@ -124,7 +117,9 @@
             <p class="contacts__full-address">г.Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
           </div>
         </div>
-        <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <div class="contacts__map-wrapper">
+          <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        </div>
         <a href="#" class="ghost-button contacts__feedback-button">Напишите нам</a>
       </section>
     </main>

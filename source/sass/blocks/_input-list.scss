@@ -8,10 +8,10 @@
   margin-bottom: 25px;
 
   color: rgba($gray--dark, 0.3%);
-}
 
-.input-list__input--name {
-  margin-bottom: 20px;
+  &--name {
+    margin-bottom: 20px;
+  }
 }
 
 .input-list__message {
@@ -19,7 +19,7 @@
   margin-bottom: 18px;
 }
 
-.input-list__comment-requred {
+.input-list__required-fileds {
   font-size: 14px;
   line-height: 1.1;
   font-weight: $font-weight--secondary;

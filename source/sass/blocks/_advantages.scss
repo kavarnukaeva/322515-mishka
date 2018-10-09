@@ -1,0 +1,45 @@
+.advantages {
+  padding-top: 33px;
+
+  outline: $outline;
+
+  @include centerer();
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+  padding-top: 57px;
+
+  &--ecology {
+    padding-right: 63px;
+  }
+
+  &--good-price {
+    padding-right: 36px;
+  }
+
+  &--more-likes {
+    padding-right: 55px;
+  }
+
+  &--handmade {
+    padding-right: 4px;
+  }
+
+  &--gift-wrap {
+    margin-bottom: 0;
+    padding-right: 9px;
+  }
+}

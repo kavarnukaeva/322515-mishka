@@ -1,0 +1,14 @@
+.main-nav__toggle {
+  width: 20px;
+  height: 14px;
+
+  background-image: url("#{$image-dir}icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}

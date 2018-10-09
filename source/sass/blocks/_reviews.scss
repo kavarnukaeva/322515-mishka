@@ -1,11 +1,13 @@
 .reviews {
+  padding-top: 30px;
   padding-bottom: 52px;
   outline: $outline;
 
-  @include centerer;
+  @include centerer();
 }
 
 .reviews__title {
+  margin: 0;
   margin-bottom: 38px;
 }
 
@@ -21,7 +23,7 @@
 
 .reviews__author-name {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 4px;
 
   line-height: 1.4;
 }
@@ -34,28 +36,33 @@
 
 .reviews__arrow-wrapper {
   display: flex;
-  margin-top: 36px;
+  margin-top: 28px;
   margin-bottom: 38px;
 }
 
 .reviews__arrow {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  width: 131px;
+  height: 53px;
 
   background-color: inherit;
-}
+  background-position: center;
+  border: 1px solid #ececec;
 
-.reviews__arrow--left {
-  padding-left: 37px;
-  padding-right: 42px;
-}
+  &--left {
+    background-image: url("#{$image-dir}icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    border-right: 1px solid #ececec;
+  }
 
-.reviews__arrow--right {
-  padding-left: 42px;
-  padding-right: 37px;
+  &--right {
+    background-image: url("#{$image-dir}icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    border-left: none;
+  }
 }
 
 .reviews__write-us {
+  margin: 0 auto;
   padding-left: 84px;
   padding-right: 85px;
 }
