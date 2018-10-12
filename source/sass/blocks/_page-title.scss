@@ -14,12 +14,12 @@
   &--index {
     padding-bottom: 120px;
 
-    background-image: url("#{$image-dir}hero-mobile@1x.jpg");
+    background-image: url("#{$image-dir}/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--index-title {
+  span {
     display: block;
   }
 }
