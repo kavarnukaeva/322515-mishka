@@ -11,9 +11,14 @@ $font-weight--primary: 700;
 $font-weight--secondary: 400;
 $font-size--page-title: 27px;
 $font-size--body: 17px;
+$font-size--tablet-title: 43px;
+$font-size--desktop-title: 53px;
 $line-height--primary: 1.2;
 
 $fonts-dir: "../fonts";
 $image-dir: "../img";
 
 $outline: 2px solid red;
+
+$tablet-width: 768px;
+$desktop-width: 1200px;

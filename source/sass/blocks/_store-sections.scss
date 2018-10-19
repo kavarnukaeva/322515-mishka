@@ -2,24 +2,38 @@
   outline: $outline;
 
   @include centerer-nopaddings();
+
+  @media (min-width: $tablet-width) {
+    @include centerer();
+  }
 }
 
 .store-sections__list {
-  margin: 0;
-  padding: 0;
+  @include reset-list();
 
-  list-style: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-top: -115px;
+  }
 }
 
 .store-sections__items {
-  padding: 30px 184px 30px 28px;
+  padding: 26px 184px 30px 28px;
 
   &--primary {
     background-color: $brand-color--light;
+
+    @media (min-width: $desktop-width) {
+      padding-right: 270px;
+    }
   }
 
   &--secondary {
     background-color: $brand-color--dark;
+
+    @media (min-width: $desktop-width) {
+      padding-right: 315px;
+    }
   }
 }
 
@@ -27,4 +41,9 @@
   font-size: 19px;
   line-height: 1.3;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

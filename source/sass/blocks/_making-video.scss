@@ -1,24 +1,106 @@
 .making-video {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 33px;
 
   outline: $outline;
 
   @include centerer();
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row-reverse;
+    padding-bottom: 100px;
+
+    @include centerer-secondary();
+  }
 }
 
 .making-video__title {
+  order: 1;
   margin: 0;
   padding: 30px 0 20px 90px;
 
   font-size: inherit;
   line-height: 1.4;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+
+    font-size: 20px;
+    line-height: $line-height--primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 60px;
+  }
+}
+
+.making-video__image-wrapper {
+  order: 2;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.making-video__image {
+  &--mobile {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
 
 .making-video__wrapper {
-  margin-bottom: 35px;
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+    width: 350px;
+  }
 }
 
 .making-video__description {
+  order: 3;
   margin: 0;
   margin-bottom: 29px;
   padding-left: 34px;
@@ -28,11 +110,29 @@
   line-height: 1.8;
   font-weight: $font-weight--secondary;
   color: $gray--dark;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 45px;
+
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    padding-left: 60px;
+  }
 }
 
 .making-video__order-placing {
-  margin: 0 auto;
-  max-width: 192px;
+  order: 4;
   width: 192px;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 584px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
 }

@@ -1,3 +1,16 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .copyright__designed-by {
   margin: 0;
   padding-top: 28px;
@@ -5,5 +18,15 @@
 
   font-size: 19px;
 
-  @include centerer();
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+  }
+}
+
+.copyright__link {
+  width: 27px;
+  height: 34px;
+
+  background-image: url("#{$image-dir}/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
 }

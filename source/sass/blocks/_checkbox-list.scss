@@ -1,3 +1,10 @@
+.checkbox-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .checkbox-list__item {
   margin-bottom: 22px;
 }

@@ -4,6 +4,11 @@
   outline: $outline;
 
   @include centerer();
+
+  @media (min-width: $desktop-width) {
+    padding-right: 275px;
+    padding-left: 275px;
+  }
 }
 
 .advantages__title {
@@ -12,34 +17,70 @@
 }
 
 .advantages__list {
-  margin: 0;
-  padding: 0;
+  @include reset-list();
 
-  list-style: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-top: 57px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 
   &--ecology {
     padding-right: 63px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 153px;
+    }
   }
 
   &--good-price {
     padding-right: 36px;
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+      padding-right: 128px;
+    }
   }
 
   &--more-likes {
     padding-right: 55px;
+
+    @media (min-width: $tablet-width) {
+      order: 4;
+      padding-right: 145px;
+    }
   }
 
   &--handmade {
     padding-right: 4px;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+      padding-right: 95px;
+    }
+  }
+
+  &--russian-produced {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
   }
 
   &--gift-wrap {
     margin-bottom: 0;
     padding-right: 9px;
+
+    @media (min-width: $tablet-width) {
+      order: 5;
+      padding-right: 100px;
+    }
   }
 }
