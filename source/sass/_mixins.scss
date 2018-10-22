@@ -5,15 +5,15 @@
   padding-left: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
     padding-right: 50px;
     padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1250px;
-    padding-right: 100px;
-    padding-left: 100px;
+    width: $desktop-width;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 
@@ -22,24 +22,12 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1250px;
+    width: $desktop-width;
   }
-}
-
-@mixin centerer-secondary() {
-  width: 1150px;
-  margin: 0 auto;
-  padding-right: 50px;
-  padding-left: 50px;
-}
-
-@mixin centerer-secondary--nopaddings() {
-  width: 1150px;
-  margin: 0 auto;
 }
 
 @mixin reset-list() {

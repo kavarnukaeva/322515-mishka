@@ -1,7 +1,5 @@
 .form {
-  padding-right: 30px;
-  padding-bottom: 55px;
-  padding-left: 30px;
+  padding: 0 30px 55px;
 
   outline: $outline;
 
@@ -11,16 +9,11 @@
     padding-right: 0;
     padding-left: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    @include centerer-secondary--nopaddings();
-  }
 }
 
 .form__intro {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
 
   font-size: 13px;
   line-height: 1.8;
@@ -36,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
+    padding: 130px 225px 0;
   }
 }
 
@@ -59,16 +52,21 @@
 .form__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 0 50px;
   }
 
-  &--name,
-  &--contacts,
+  @media (min-width: $desktop-width) {
+    padding-right: 225px;
+  }
+
   &--message {
     @media (min-width: $tablet-width) {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      margin-bottom: 45px;
+      padding: 50px 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
     }
   }
 
@@ -79,28 +77,24 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-right: 225px;
-      padding-left: 225px;
+      padding: 0 225px;
     }
   }
 }
 
-.form__type,
-.form__color,
-.form__client-info {
+.form fieldset {
   margin: 0;
   padding: 0;
 
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
   }
 }
 
 .form__color,
-.form__wrapper--contacts {
+.form__client-contacts {
   @media (min-width: $tablet-width) {
     background-color: $gray;
   }
@@ -124,7 +118,6 @@
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     width: 230;
   }
 }

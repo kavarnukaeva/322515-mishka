@@ -11,12 +11,6 @@
     align-items: center;
     height: 143px;
   }
-
-  &--secondary {
-    @media (min-width: $desktop-width) {
-      @include centerer-secondary();
-    }
-  }
 }
 
 .page-footer__logo {

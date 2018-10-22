@@ -26,10 +26,22 @@
 
 .input-list__message {
   display: block;
+  width: 100%;
   margin-bottom: 18px;
+
+  border: 2px solid $gray--dark;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-grow: 1;
+    width: auto;
+  }
 }
 
 .input-list__required-fileds {
+  display: block;
+  margin-bottom: 30px;
+
   font-size: 14px;
   line-height: 1.1;
   font-weight: $font-weight--secondary;
@@ -37,6 +49,7 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+    margin-bottom: 0;
 
     font-size: $font-size--body;
     line-height: 1.8;

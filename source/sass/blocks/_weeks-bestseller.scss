@@ -1,4 +1,5 @@
 .weeks-bestseller {
+  min-height: 780px; //временно для сетки
   padding-top: 27px;
   padding-bottom: 36px;
 
@@ -7,15 +8,15 @@
   @include centerer();
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     padding-top: 70px;
-    padding-left: 250px;
+    padding-bottom: 70px;
   }
 }
 
@@ -31,9 +32,11 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 135px;
-    left: 107px;
+    top: 130px;
+    left: 80px;
+
     flex-direction: row-reverse;
+    justify-content: flex-end;
     padding-bottom: 65px;
   }
 }
@@ -65,7 +68,14 @@
 
 .weeks-bestseller__wrapper {
   @media (min-width: $tablet-width) {
-    width: 300px;
+    display: flex;
+  }
+}
+
+.weeks-bestseller__main-wrapper {
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
+    padding-left: 175px;
   }
 }
 
@@ -105,39 +115,18 @@
 
 .weeks-bestseller__image {
   margin-bottom: 27px;
+}
 
-  &--mobile {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
+.weeks-bestseller__footer-wrapper {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
   }
 
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
+  @media (min-width: $desktop-width) {
+    left: 225px;
+    bottom: 70px;
   }
 }
 

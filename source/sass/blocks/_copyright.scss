@@ -2,12 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 0 40px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
   }
 }
 

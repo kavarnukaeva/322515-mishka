@@ -2,10 +2,6 @@
   outline: $outline;
 
   @include centerer();
-
-  @media (min-width: $desktop-width) {
-    @include centerer-secondary();
-  }
 }
 
 .catalog__list {
@@ -42,42 +38,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-  }
-}
-
-.catalog__image {
-  &--mobile {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
   }
 }
 

@@ -48,14 +48,6 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 130px;
-
-      @include centerer-secondary();
-    }
-  }
-
-  &--form {
-    @media (min-width: $desktop-width) {
-      @include centerer-secondary();
     }
   }
 

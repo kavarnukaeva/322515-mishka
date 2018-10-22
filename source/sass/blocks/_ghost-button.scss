@@ -1,7 +1,6 @@
 .ghost-button {
   display: block;
   width: 260px;
-  margin: 0 auto;
   padding: 14px 10px;
 
   text-align: center;
@@ -11,6 +10,8 @@
   border: 2px solid $gray--dark;
 
   &--add-to-cart {
+    margin: 0 auto;
+
     font-weight: inherit;
     color: #ffffff;
 
