@@ -1,27 +1,25 @@
 .ghost-button {
   display: block;
-  max-width: 260px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  width: 260px;
+  padding: 14px 10px;
 
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
+  text-align: center;
   text-transform: uppercase;
   color: inherit;
 
-  background-color: inherit;
   border: 2px solid $gray--dark;
 
   &--add-to-cart {
     margin: 0 auto;
-    padding-left: 82px;
-    padding-right: 83px;
 
-    font-size: inherit;
+    font-weight: inherit;
     color: #ffffff;
 
     background-color: $brand-color--light;
     border: none;
+
+    @media (min-width: $tablet-width) {
+      width: 350px;
+    }
   }
 }

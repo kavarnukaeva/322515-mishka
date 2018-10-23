@@ -1,24 +1,66 @@
 .reviews {
-  padding-top: 30px;
+  padding-top: 34px;
   padding-bottom: 52px;
   outline: $outline;
 
   @include centerer();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 120px;
+
+    background-image: url("#{$image-dir}/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+    padding-left: 225px;
+
+    background-position: 0 0;
+  }
 }
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 
   font-size: 15px;
   line-height: 2;
   font-weight: $font-weight--secondary;
   color: $gray--dark;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 60px;
+
+    font-size: $font-size--body;
+    line-height: 1.8;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 130px;
+  }
+}
+
+.reviews__author-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }
 
 .reviews__author-name {
@@ -38,6 +80,10 @@
   display: flex;
   margin-top: 28px;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 }
 
 .reviews__arrow {
@@ -49,20 +95,23 @@
   border: 1px solid #ececec;
 
   &--left {
-    background-image: url("#{$image-dir}icon-left-arrow.svg");
+    background-image: url("#{$image-dir}/icon-left-arrow.svg");
     background-repeat: no-repeat;
     border-right: 1px solid #ececec;
   }
 
   &--right {
-    background-image: url("#{$image-dir}icon-right-arrow.svg");
+    background-image: url("#{$image-dir}/icon-right-arrow.svg");
     background-repeat: no-repeat;
     border-left: none;
   }
 }
 
 .reviews__write-us {
-  margin: 0 auto;
-  padding-left: 84px;
-  padding-right: 85px;
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin: 0;
+    margin-bottom: 65px;
+    width: 175px;
+  }
 }

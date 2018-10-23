@@ -1,3 +1,11 @@
 .index-titles {
   font-size: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--tablet-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--desktop-title;
+  }
 }

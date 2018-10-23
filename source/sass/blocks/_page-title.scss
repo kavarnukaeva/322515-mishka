@@ -1,5 +1,6 @@
 .page-title {
-  padding-top: 75px;
+  margin: 0;
+  padding-top: 80px;
   padding-bottom: 75px;
 
   font-size: $font-size--page-title;
@@ -11,15 +12,50 @@
 
   @include centerer();
 
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: $line-height--primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+  }
+
   &--index {
     padding-bottom: 120px;
 
-    background-image: url("#{$image-dir}hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
+    background-image: url("#{$image-dir}/hero-mobile@1x.jpg");
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 163px;
+      padding-bottom: 480px;
+
+      background-image: url("#{$image-dir}/hero-tablet@1x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 160px 210px 350px 210px;
+
+      background-image: url("#{$image-dir}/hero-desktop@1x.jpg");
+    }
   }
 
-  &--index-title {
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 130px;
+    }
+  }
+
+  span {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
   }
 }

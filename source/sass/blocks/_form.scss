@@ -1,15 +1,19 @@
 .form {
-  padding-bottom: 55px;
+  padding: 0 30px 55px;
 
   outline: $outline;
 
-  @include centerer();
+  @include centerer-nopaddings();
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .form__intro {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
 
   font-size: 13px;
   line-height: 1.8;
@@ -17,6 +21,16 @@
   color: $gray--dark;
 
   @include centerer();
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+
+    font-size: $font-size--body;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 130px 225px 0;
+  }
 }
 
 .form__title {
@@ -24,22 +38,74 @@
 
   color: $brand-color--light;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 175px;
+    padding-left: 60px;
+  }
 }
 
-.form__type,
-.form__color,
-.form__client-info {
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 225px;
+  }
+
+  &--message {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
+      padding: 50px 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
+    }
+  }
+
+  &--footer {
+    @media (min-width: $tablet-width) {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 225px;
+    }
+  }
+}
+
+.form fieldset {
   margin: 0;
   padding: 0;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+  }
+}
+
+.form__color,
+.form__client-contacts {
+  @media (min-width: $tablet-width) {
+    background-color: $gray;
+  }
 }
 
 .form__list {
-  margin: 0;
-  padding: 0;
+  @include reset-list();
 
-  list-style: none;
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .form__client-info {
@@ -47,5 +113,11 @@
 }
 
 .form__submit {
-  margin: 0 auto;
+  font-weight: inherit;
+
+  background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    width: 230;
+  }
 }

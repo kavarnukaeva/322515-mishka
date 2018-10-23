@@ -4,4 +4,20 @@
   outline: $outline;
 
   @include centerer();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 143px;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-right: 120px;
+  }
 }

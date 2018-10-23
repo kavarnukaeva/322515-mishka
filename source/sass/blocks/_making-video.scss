@@ -1,9 +1,21 @@
 .making-video {
-  padding-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
 
   outline: $outline;
 
   @include centerer();
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
 }
 
 .making-video__title {
@@ -12,27 +24,82 @@
 
   font-size: inherit;
   line-height: 1.4;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+
+    font-size: 20px;
+    line-height: $line-height--primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    float: right;
+    width: 350px;
+    margin-bottom: 40px;
+    padding: 100px 51px 0 60px;
+  }
 }
 
-.making-video__wrapper {
+.making-video__image-wrapper {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    float: left;
+  }
+}
+
+.making-video__image {
+  margin-bottom: 30px;
+
+  //временно для сетки
+  @media (min-width: $desktop-width) {
+    width: 682px;
+    height: 455px;
+  }
 }
 
 .making-video__description {
   margin: 0;
   margin-bottom: 29px;
-  padding-left: 34px;
-  padding-right: 34px;
+  padding: 0 34px;
 
   font-size: 13px;
   line-height: 1.8;
   font-weight: $font-weight--secondary;
   color: $gray--dark;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    padding-right: 45px;
+
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    float: right;
+    width: 350px;
+    margin-bottom: 50px;
+    padding-left: 60px;
+  }
 }
 
 .making-video__order-placing {
-  margin: 0 auto;
-  max-width: 192px;
+  order: 4;
   width: 192px;
-  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 584px;
+  }
+
+  @media (min-width: $desktop-width) {
+    float: right;
+    width: 230px;
+    margin-right: 60px;
+  }
 }
