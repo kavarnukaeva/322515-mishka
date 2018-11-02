@@ -1,18 +1,29 @@
 .advantages {
-  padding-top: 33px;
-
-  outline: $outline;
+  padding-top: 32px;
 
   @include centerer();
 
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 225px;
+    padding: 58px 220px 0;
   }
 }
 
 .advantages__title {
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
 }
 
 .advantages__list {
@@ -26,17 +37,24 @@
 
 .advantages__item {
   margin-bottom: 25px;
-  padding-top: 57px;
+  padding-top: 58px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-bottom: 53px;
+    font-size: 20px;
+    line-height: 1.1;
   }
 
   &--ecology {
     padding-right: 63px;
 
     @media (min-width: $tablet-width) {
-      padding-right: 153px;
+      padding-right: 105px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 125px;
     }
   }
 
@@ -45,7 +63,7 @@
 
     @media (min-width: $tablet-width) {
       order: 2;
-      padding-right: 128px;
+      padding-right: 100px;
     }
   }
 
@@ -54,7 +72,7 @@
 
     @media (min-width: $tablet-width) {
       order: 4;
-      padding-right: 145px;
+      padding-right: 120px;
     }
   }
 
@@ -63,7 +81,11 @@
 
     @media (min-width: $tablet-width) {
       order: 1;
-      padding-right: 95px;
+      padding-right: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 55px;
     }
   }
 
@@ -79,7 +101,11 @@
 
     @media (min-width: $tablet-width) {
       order: 5;
-      padding-right: 100px;
+      padding-right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 60px;
     }
   }
 }

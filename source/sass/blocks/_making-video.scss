@@ -1,14 +1,18 @@
 .making-video {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 80px;
-
-  outline: $outline;
+  padding-top: 3px;
+  padding-bottom: 58px;
 
   @include centerer();
 
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 63px;
+  }
+
   @media (min-width: $desktop-width) {
     display: block;
+    padding-top: 3px;
+    padding-bottom: 76px;
 
     &::after {
       content: "";
@@ -18,16 +22,32 @@
   }
 }
 
+.making-video__wrapper {
+  border: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    min-height: 455px;
+  }
+}
+
 .making-video__title {
   margin: 0;
-  padding: 30px 0 20px 90px;
-
+  padding: 24px 0 27px 90px;
   font-size: inherit;
   line-height: 1.4;
 
   @media (min-width: $tablet-width) {
     order: 2;
-
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 105px;
     font-size: 20px;
     line-height: $line-height--primary;
   }
@@ -35,13 +55,13 @@
   @media (min-width: $desktop-width) {
     float: right;
     width: 350px;
-    margin-bottom: 40px;
-    padding: 100px 51px 0 60px;
+    margin-bottom: 33px;
+    padding: 95px 51px 0 62px;
   }
 }
 
 .making-video__image-wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -52,30 +72,20 @@
   }
 }
 
-.making-video__image {
-  margin-bottom: 30px;
-
-  //временно для сетки
-  @media (min-width: $desktop-width) {
-    width: 682px;
-    height: 455px;
-  }
-}
-
 .making-video__description {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   padding: 0 34px;
-
   font-size: 13px;
-  line-height: 1.8;
+  line-height: 1.9;
   font-weight: $font-weight--secondary;
   color: $gray--dark;
 
   @media (min-width: $tablet-width) {
     order: 3;
+    margin-bottom: 35px;
     padding-right: 45px;
-
+    padding-left: 39px;
     font-size: 15px;
     line-height: 2;
   }
@@ -83,8 +93,8 @@
   @media (min-width: $desktop-width) {
     float: right;
     width: 350px;
-    margin-bottom: 50px;
-    padding-left: 60px;
+    margin-bottom: 46px;
+    padding-left: 61px;
   }
 }
 
@@ -92,6 +102,7 @@
   order: 4;
   width: 192px;
   margin: 0 auto;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     width: 584px;
@@ -100,6 +111,6 @@
   @media (min-width: $desktop-width) {
     float: right;
     width: 230px;
-    margin-right: 60px;
+    margin-right: 57px;
   }
 }

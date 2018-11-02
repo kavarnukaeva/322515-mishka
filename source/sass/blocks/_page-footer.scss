@@ -1,8 +1,6 @@
 .page-footer {
   background-color: $gray;
 
-  outline: $outline;
-
   @include centerer();
 
   @media (min-width: $tablet-width) {

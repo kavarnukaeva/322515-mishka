@@ -1,10 +1,26 @@
 .store-sections {
-  outline: $outline;
+  position: relative;
 
   @include centerer-nopaddings();
 
   @media (min-width: $tablet-width) {
     @include centerer();
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 23px;
+      background-image: url("#{$image-dir}/bg-zigzag-fill.svg");
+      background-size: contain;
+
+      @media (min-width: $desktop-width) {
+        bottom: -9px;
+        height: 34px;
+      }
+    }
   }
 }
 
@@ -12,13 +28,22 @@
   @include reset-list();
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     margin-top: -115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
   }
 }
 
 .store-sections__items {
-  padding: 26px 184px 30px 28px;
+  padding: 25px 115px 30px 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 117px 40px 36px;
+  }
 
   &--primary {
     background-color: $brand-color--light;
@@ -34,6 +59,10 @@
     @media (min-width: $desktop-width) {
       padding-right: 315px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
   }
 }
 

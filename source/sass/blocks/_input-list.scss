@@ -1,47 +1,128 @@
+.input-list {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
 .input-list__item {
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  &--name {
+    padding-top: 1px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-left: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 22px;
+    }
+  }
+
+  &--contacts .input-list__label {
+    @media (min-width: $tablet-width) {
+      margin-right: 43px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 22px;
+    }
+  }
 }
+
 
 .input-list__label {
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 11px;
 
   &--name {
-    margin-right: 25px;
+    margin-right: 24px;
+  }
+
+  &--message {
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      padding-top: 16px;
+    }
   }
 }
 
 .input-list__input {
   display: block;
+  width: 100%;
   margin-bottom: 25px;
+  padding-bottom: 16px;
+  border: none;
+  border-bottom: 2px solid #000000;
 
-  color: rgba($gray--dark, 0.3%);
+  &::placeholder {
+    color: rgba($gray--dark, 0.3%);
+    line-height: 1.1;
+  }
 
   &--name {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 37px;
+    }
+  }
+
+  &--tel {
+    margin-bottom: 31px;
+    padding-top: 6px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 36px;
+      background-color: $gray;
+    }
+  }
+
+  &--email {
+    padding-top: 6px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $gray;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 14px 16px;
+    font-size: 19px;
   }
 }
 
 .input-list__message {
   display: block;
   width: 100%;
-  margin-bottom: 18px;
-
+  min-height: 142px;
+  margin-bottom: 16px;
+  padding-top: 13px;
+  padding-left: 15px;
   border: 2px solid $gray--dark;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-grow: 1;
     width: auto;
+    margin-bottom: 0;
+    font-size: 19px;
+
+    &::placeholder {
+      color: rgba($gray--dark, 0.3%);
+      line-height: 1.1;
+    }
   }
 }
 
 .input-list__required-fileds {
   display: block;
-  margin-bottom: 30px;
-
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 1.1;
   font-weight: $font-weight--secondary;
@@ -50,7 +131,6 @@
   @media (min-width: $tablet-width) {
     order: 1;
     margin-bottom: 0;
-
     font-size: $font-size--body;
     line-height: 1.8;
   }

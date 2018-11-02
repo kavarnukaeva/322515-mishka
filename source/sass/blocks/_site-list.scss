@@ -3,15 +3,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    height: 100%;
   }
 }
 
 .site-list__item {
   display: flex;
-  align-items: center;
-  height: 79px;
-  padding-left: 76px;
-
+  padding: 30px 0 30px 76px;
   border-top: 1px solid #ececec;
 
   @media (min-width: $tablet-width) {
@@ -23,7 +21,7 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-      padding-left: 84px;
+      padding-left: 83px;
       border-left: 1px solid #ececec;
     }
   }
@@ -32,7 +30,7 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-      padding-left: 84px;
+      padding-left: 82px;
       border-left: 1px solid #ececec;
     }
   }

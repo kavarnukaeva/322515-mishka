@@ -1,6 +1,5 @@
 .social {
-  padding: 25px 62px 27px 57px;
-
+  padding: 23px 62px 25px 57px;
   border-bottom: 1px solid #ececec;
 
   @media (min-width: $tablet-width) {
@@ -12,6 +11,7 @@
 .social__list {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 
   @include reset-list();
 }

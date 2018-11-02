@@ -2,18 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 39px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-top: 5px;
   }
 }
 
 .copyright__designed-by {
   margin: 0;
-  padding-top: 28px;
-  padding-bottom: 31px;
-
+  padding-top: 25px;
+  padding-bottom: 32px;
   font-size: 19px;
 
   @media (min-width: $tablet-width) {
@@ -24,7 +24,6 @@
 .copyright__link {
   width: 27px;
   height: 34px;
-
   background-image: url("#{$image-dir}/logo-htmlacademy.svg");
   background-repeat: no-repeat;
 }
