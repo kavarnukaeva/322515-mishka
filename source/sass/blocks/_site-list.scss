@@ -3,27 +3,31 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    height: 100%;
   }
 }
 
 .site-list__item {
   display: flex;
-  align-items: center;
-  height: 79px;
-  padding-left: 76px;
-
+  padding: 30px 0 30px 76px;
   border-top: 1px solid #ececec;
 
   @media (min-width: $tablet-width) {
+    padding-top: 24px;
     padding-left: 0;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
   }
 
   &--search {
     position: relative;
 
     @media (min-width: $tablet-width) {
-      padding-left: 84px;
+      padding-top: 31px;
+      padding-left: 83px;
       border-left: 1px solid #ececec;
     }
   }
@@ -32,7 +36,8 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-      padding-left: 84px;
+      padding-top: 31px;
+      padding-left: 82px;
       border-left: 1px solid #ececec;
     }
   }

@@ -36,3 +36,8 @@
 
   list-style: none;
 }
+
+@mixin placeholder() {
+  color: rgba($gray--dark, 0.3%);
+  line-height: 1.1;
+}

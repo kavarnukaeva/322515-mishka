@@ -1,5 +1,5 @@
 .store-sections {
-  outline: $outline;
+  position: relative;
 
   @include centerer-nopaddings();
 
@@ -12,13 +12,22 @@
   @include reset-list();
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
-    margin-top: -115px;
+    margin-top: -117px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -121px;
   }
 }
 
 .store-sections__items {
-  padding: 26px 184px 30px 28px;
+  padding: 25px 115px 30px 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 117px 40px 36px;
+  }
 
   &--primary {
     background-color: $brand-color--light;
@@ -34,6 +43,10 @@
     @media (min-width: $desktop-width) {
       padding-right: 315px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
   }
 }
 

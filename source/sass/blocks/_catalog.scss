@@ -1,6 +1,4 @@
 .catalog {
-  outline: $outline;
-
   @include centerer();
 }
 
@@ -16,13 +14,20 @@
 
 .catalog__item {
   margin-bottom: 30px;
-
   border: 1px solid #ececec;
-  outline: $outline;
 
   @media (min-width: $tablet-width) {
     display: flex;
     width: 100%;
+    margin-bottom: 53px;
+
+    &:last-child .catalog__item-description {
+      margin-bottom: 151px;
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 14px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -34,48 +39,105 @@
 .catalog__link {
   display: block;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
 
-.catalog__item-title,
-.catalog__item-description,
-.catalog__item-price {
-  padding-left: 28px;
-  padding-right: 26px;
+.catalog__link picture {
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: 332px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 460px;
+  }
+}
+
+.catalog__item-wrapper {
+  padding: 0 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 26px 0;
+  }
+}
+
+.catalog__link,
+.catalog__item-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .catalog__item-title {
   margin: 0;
-  margin-bottom: 17px;
-
+  margin-bottom: 7px;
   font-size: inherit;
+  line-height: 1.3;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 20px;
+  }
 }
 
 .catalog__link-title {
   line-height: 1.4;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: $line-height--primary;
+  }
 }
 
 .catalog__item-description {
   margin: 0;
-  margin-bottom: 27px;
-
+  margin-bottom: 19px;
   font-size: 13px;
   line-height: 2.3;
   font-weight: $font-weight--secondary;
   color: $gray--dark;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 175px;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .catalog__wrapper-bottom {
-  padding-top: 27px;
-  padding-bottom: 30px;
+  padding-top: 21px;
+  padding-bottom: 27px;
+  border-top: 1px solid #ececec;
 }
 
 .catalog__item-price {
   font-size: 15px;
   line-height: 1.6;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 7px;
+    font-size: $font-size--body;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }

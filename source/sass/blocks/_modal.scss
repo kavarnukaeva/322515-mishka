@@ -1,22 +1,18 @@
 .modal {
   padding-bottom: 46px;
 
-  outline: $outline;
-
   @include centerer();
 }
 
 .modal__title {
   margin-bottom: 25px;
   padding: 0 55px;
-
   text-align: center;
 }
 
 .modal__intro {
   margin: 0;
   margin-bottom: 28px;
-
   font-size: 15px;
   line-height: 2px;
   font-weight: $font-weight--secondary;
