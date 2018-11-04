@@ -1,7 +1,9 @@
 .form {
-  padding: 0 30px 56px;
+  @media (max-width: 767px) {
+    @include centerer-nopaddings();
+  }
 
-  @include centerer-nopaddings();
+  padding: 0 30px 57px;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 51px;
@@ -25,13 +27,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 81px 225px 9px;
+    padding: 76px 225px 9px;
   }
 }
 
 .form__title {
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   color: $brand-color--light;
   text-transform: uppercase;
 
@@ -43,29 +45,34 @@
     width: 198px;
     height: 1px;
     background-color: $brand-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--email::after {
+    width: 179px;
   }
 
   @media (min-width: $tablet-width) {
     width: 167px;
-
-    &::after {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 175px;
     padding-left: 60px;
   }
-
-  &--email {
-    &::after {
-      width: 179px;
-    }
-  }
 }
 
 .form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0 50px;
+
+    @include centerer-nopaddings();
+  }
+
   &--type {
     margin-bottom: 42px;
 
@@ -75,11 +82,10 @@
   }
 
   &--color {
-    margin-bottom: 39px;
+    margin-bottom: 37px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
-      padding-top: 18px;
     }
   }
 
@@ -89,6 +95,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
+    }
   }
 
   &--contacts {
@@ -97,15 +107,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 13px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    padding: 0 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 225px;
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
+    }
   }
 
   &--message {

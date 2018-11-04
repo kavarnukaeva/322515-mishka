@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     @include centerer();
@@ -17,15 +18,21 @@
 }
 
 .page-header__wrapper {
-  position: relative;
   display: flex;
   align-items: center;
   padding: 18px 0;
 
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-right: auto;
+    padding: 15px 0;
+  }
+
   @media (min-width: $desktop-width) {
-    position: absolute;
-    bottom: -15px;
-    left: 500px;
+    order: 2;
+    margin: 0;
+    padding: 0;
+    padding-right: 63px;
   }
 }
 
@@ -53,25 +60,36 @@
 }
 
 .page-header__navigation {
+  @media (min-width: $tablet-width) {
+    order: 3;
+    z-index: 1;
+    margin-bottom: -92px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    order: 1;
+    margin-bottom: -5px;
+  }
+
+  &--user {
+    @media (min-width: $tablet-width) {
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 3;
+    }
   }
 }
 
 .page-header__site-nav {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 50px;
-    top: 79px;
-    z-index: 1;
     font-size: 15px;
     line-height: 1.6;
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
     font-size: $font-size--body;
     line-height: 1.4;
   }
@@ -90,6 +108,13 @@
   }
 }
 
+.page-header__additional-nav-wrapper {
+  @media (min-width: $desktop-width) {
+    order: 4;
+    z-index: 1;
+    margin-bottom: -42px;
+  }
+}
 
 .page-header__additional-nav {
   display: none;
@@ -97,9 +122,6 @@
   @include reset-list();
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 105px;
-    z-index: 1;
     display: flex;
     font-size: 15px;
     line-height: 1.6;
@@ -107,6 +129,7 @@
 }
 
 .page-header__additional-nav-item {
+  padding-top: 22px;
   padding-right: 60px;
 }
 
@@ -114,11 +137,12 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    right: 50px;
-    top: 92px;
-    z-index: 1;
     display: block;
+    order: 4;
+    z-index: 1;
+    margin: 0;
+    margin-bottom: -42px;
+    padding-top: 22px;
     font-size: 15px;
     line-height: 1.6;
     font-weight: $font-weight--secondary;
@@ -126,6 +150,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 50px;
+    order: 5;
   }
 }

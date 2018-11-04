@@ -5,22 +5,6 @@
 
   @media (min-width: $tablet-width) {
     @include centerer();
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 100%;
-      height: 23px;
-      background-image: url("#{$image-dir}/bg-zigzag-fill.svg");
-      background-size: contain;
-
-      @media (min-width: $desktop-width) {
-        bottom: -9px;
-        height: 34px;
-      }
-    }
   }
 }
 
@@ -30,11 +14,11 @@
   @media (min-width: $tablet-width) {
     position: relative;
     display: flex;
-    margin-top: -115px;
+    margin-top: -117px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 10px;
+    margin-top: -121px;
   }
 }
 
