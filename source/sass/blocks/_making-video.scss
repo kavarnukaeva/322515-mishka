@@ -1,5 +1,4 @@
 .making-video {
-  padding-top: 3px;
   padding-bottom: 58px;
 
   @include centerer();
@@ -38,10 +37,32 @@
 }
 
 .making-video__title {
+  position: relative;
   margin: 0;
   padding: 24px 0 27px 90px;
   font-size: inherit;
   line-height: 1.4;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 33px;
+    width: 32px;
+    height: 32px;
+    background-image: url("#{$image-dir}/icon-video.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 5px;
+      left: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
+      left: 64px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     order: 2;

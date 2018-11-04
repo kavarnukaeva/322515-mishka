@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 32px;
+  padding-top: 29px;
 
   @include centerer();
 
@@ -36,8 +36,15 @@
 }
 
 .advantages__item {
+  position: relative;
   margin-bottom: 25px;
   padding-top: 58px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -48,6 +55,14 @@
 
   &--ecology {
     padding-right: 63px;
+
+    &::before {
+      top: 3px;
+      left: 8px;
+      width: 33px;
+      height: 38px;
+      background-image: url("#{$image-dir}/icon-feature-flower.svg");
+    }
 
     @media (min-width: $tablet-width) {
       padding-right: 105px;
@@ -61,6 +76,13 @@
   &--good-price {
     padding-right: 36px;
 
+    &::before {
+      top: 4px;
+      width: 47px;
+      height: 27px;
+      background-image: url("#{$image-dir}/icon-feature-money.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 2;
       padding-right: 100px;
@@ -70,6 +92,14 @@
   &--more-likes {
     padding-right: 55px;
 
+    &::before {
+      top: 9px;
+      left: 7px;
+      width: 34px;
+      height: 27px;
+      background-image: url("#{$image-dir}/icon-feature-heart.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 4;
       padding-right: 120px;
@@ -78,6 +108,14 @@
 
   &--handmade {
     padding-right: 4px;
+
+    &::before {
+      top: 6px;
+      left: 3px;
+      width: 35px;
+      height: 34px;
+      background-image: url("#{$image-dir}/icon-feature-ball.svg");
+    }
 
     @media (min-width: $tablet-width) {
       order: 1;
@@ -90,6 +128,14 @@
   }
 
   &--russian-produced {
+    &::before {
+      top: 7px;
+      left: -6px;
+      width: 55px;
+      height: 23px;
+      background-image: url("#{$image-dir}/icon-feature-rocket.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 3;
     }
@@ -98,6 +144,14 @@
   &--gift-wrap {
     margin-bottom: 0;
     padding-right: 9px;
+
+    &::before {
+      top: 5px;
+      left: 3px;
+      width: 33px;
+      height: 32px;
+      background-image: url("#{$image-dir}/icon-feature-gift.svg");
+    }
 
     @media (min-width: $tablet-width) {
       order: 5;
