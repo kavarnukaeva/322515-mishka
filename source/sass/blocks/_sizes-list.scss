@@ -1,3 +1,56 @@
 .sizes-list {
+  display: flex;
+  justify-content: space-around;
+
   @include reset-list();
+
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.sizes-list__item {
+  padding: 25px 38px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 47px;
+  }
+}
+
+.sizes-list__label {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -37px;
+    width: 82px;
+    height: 52px;
+    border: 2px solid #ececec;
+
+    @media (min-width: $tablet-width) {
+      width: 112px;
+      height: 52px;
+      left: -51px;
+    }
+  }
+
+  &--middle::after {
+    left: -32px;
+
+    @media (min-width: $tablet-width) {
+      left: -48px;
+    }
+  }
+
+  &--large::after {
+    left: -35px;
+
+    @media (min-width: $tablet-width) {
+      left: -51px;
+    }
+  }
 }
