@@ -7,6 +7,15 @@
 
   border: 2px solid $gray--dark;
 
+  &:hover {
+    color: #ffffff;
+    background-color: $gray--dark;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--add-to-cart {
     width: 260px;
     margin: 0 auto;

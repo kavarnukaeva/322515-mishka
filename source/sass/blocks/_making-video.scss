@@ -93,6 +93,35 @@
   }
 }
 
+.making-video__play-button {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 78px;
+    bottom: 41px;
+    width: 101px;
+    height: 77px;
+    background-image: url("#{$image-dir}/icon-play.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 282px;
+      bottom: 194px;
+    }
+  }
+
+  &:hover::before {
+    transform: scale(1.2);
+  }
+
+  &:active::before {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
 .making-video__description {
   margin: 0;
   margin-bottom: 24px;

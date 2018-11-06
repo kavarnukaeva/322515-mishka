@@ -29,7 +29,7 @@
     left: -37px;
     width: 82px;
     height: 52px;
-    border: 2px solid #ececec;
+    border: 2px solid rgba($gray--dark, 0.1);
 
     @media (min-width: $tablet-width) {
       width: 112px;
@@ -52,5 +52,13 @@
     @media (min-width: $tablet-width) {
       left: -51px;
     }
+  }
+
+  &:hover::after {
+    border: 2px solid rgba($gray--dark, 0.3);
+  }
+
+  &:active::after {
+    border: 2px solid $brand-color;
   }
 }

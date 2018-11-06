@@ -2,11 +2,11 @@
   padding-top: 34px;
   padding-bottom: 39px;
 
-  @include centerer-nopaddings();
-
   @media (min-width: $tablet-width) {
     padding-top: 37px;
     padding-bottom: 57px;
+
+    @include centerer-nopaddings();
   }
 
   @media (min-width: $desktop-width) {
@@ -132,6 +132,22 @@
       width: 200px;
     }
   }
+
+  &:hover {
+    color: #46c1ae;
+
+    &::before {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__field {
@@ -148,6 +164,7 @@
 }
 
 .contacts__map {
+  margin: 0 auto;
   margin-bottom: 35px;
   background-image: url("#{$image-dir}/map-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -179,7 +196,7 @@
 
 .contacts__map iframe {
   @media (max-width: 767px) {
-    width: 320px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {

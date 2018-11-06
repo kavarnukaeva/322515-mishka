@@ -46,6 +46,14 @@
 .site-list__link {
   color: inherit;
   line-height: 1.4;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__icon {
