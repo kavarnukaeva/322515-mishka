@@ -1,8 +1,6 @@
 .store-sections {
   position: relative;
 
-  @include centerer-nopaddings();
-
   @media (min-width: $tablet-width) {
     @include centerer();
   }
@@ -23,26 +21,14 @@
 }
 
 .store-sections__items {
-  padding: 25px 115px 30px 28px;
-
-  @media (min-width: $tablet-width) {
-    padding: 28px 117px 40px 36px;
-  }
+  position: relative;
 
   &--primary {
     background-color: $brand-color--light;
-
-    @media (min-width: $desktop-width) {
-      padding-right: 270px;
-    }
   }
 
   &--secondary {
     background-color: $brand-color--dark;
-
-    @media (min-width: $desktop-width) {
-      padding-right: 315px;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -51,12 +37,90 @@
 }
 
 .store-sections__button {
+  position: relative;
+  display: block;
+  padding: 25px 120px 31px 28px;
   font-size: 19px;
   line-height: 1.3;
   color: #ffffff;
 
+  &--primary {
+    background-color: $brand-color--light;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("#{$image-dir}/icon-interior.svg");
+      background-repeat: no-repeat;
+      opacity: 0.5;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #59d5bc;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 275px;
+    }
+  }
+
+  &--secondary {
+    background-color: $brand-color--dark;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: 28px;
+      width: 60px;
+      height: 60px;
+      background-image: url("#{$image-dir}/icon-toy.svg");
+      background-repeat: no-repeat;
+      opacity: 0.5;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #46c1ae;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 315px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    @include centerer-nopaddings();
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    padding-top: 20px;
+    padding-bottom: 41px;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.7;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }

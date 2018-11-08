@@ -21,3 +21,16 @@
     padding-right: 40px;
   }
 }
+
+.social-link__icons {
+  fill: #221f1f;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(70, 193, 174, 0.3);
+  }
+}

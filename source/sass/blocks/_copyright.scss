@@ -1,7 +1,4 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 39px;
 
   @media (min-width: $tablet-width) {
@@ -15,15 +12,34 @@
   padding-top: 25px;
   padding-bottom: 32px;
   font-size: 19px;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     padding-right: 30px;
   }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__logo {
   width: 27px;
   height: 34px;
-  background-image: url("#{$image-dir}/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
+  fill: $brand-color--light;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(70, 193, 174, 0.3);
+  }
 }

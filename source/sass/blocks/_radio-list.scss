@@ -10,6 +10,25 @@
   }
 }
 
+.radio-list__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -51px;
+  width: 16px;
+  height: 16px;
+  background-color: $brand-color;
+  border: none;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+    left: -65px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
 .radio-list__label {
   position: relative;
 
@@ -29,5 +48,14 @@
       top: -13px;
       left: -80px;
     }
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $brand-color;
+  }
+
+  &:active::before {
+    border-color: rgba($gray--dark, 0.3);
   }
 }

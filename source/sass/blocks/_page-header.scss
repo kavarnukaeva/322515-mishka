@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 
   @include centerer-nopaddings();
@@ -14,6 +15,12 @@
 
   @media (min-width: $desktop-width) {
     min-height: 88px;
+  }
+
+  &--no-js {
+    .page-header__button {
+      display: none;
+    }
   }
 }
 
@@ -38,6 +45,15 @@
 
 .page-header__logo {
   margin: 0 auto;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-image {
@@ -46,13 +62,48 @@
 
 .page-header__button {
   position: absolute;
+  top: 28px;
   right: 31px;
-  width: 20px;
-  height: 14px;
-  background-image: url("#{$image-dir}/icon-menu-open.svg");
-  background-repeat: no-repeat;
+  display: block;
+  width: 23px;
+  height: 23px;
+  padding: 0;
   background-color: inherit;
+  cursor: pointer;
   border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 7px 0 0 #221f1f, 0 14px 0 0 #221f1f;
+  }
+
+  &--close {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -2px;
+      width: 28px;
+      height: 2px;
+      background-color: #221f1f;
+    }
+
+    &::before {
+      transform: rotate(44deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-44deg);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -60,7 +111,10 @@
 }
 
 .page-header__navigation {
+  display: none;
+
   @media (min-width: $tablet-width) {
+    display: block;
     order: 3;
     z-index: 1;
     margin-bottom: -92px;
@@ -80,6 +134,14 @@
     @media (min-width: $desktop-width) {
       order: 3;
     }
+  }
+
+  .page-header--no-js & {
+    display: block;
+  }
+
+  &--opened {
+    display: block;
   }
 }
 

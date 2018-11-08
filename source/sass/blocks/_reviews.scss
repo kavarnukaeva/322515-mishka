@@ -13,6 +13,7 @@
     width: 100%;
     height: 6px;
     background-image: url("#{$image-dir}/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-width: $tablet-width) {
@@ -39,6 +40,11 @@
     background-image: url("#{$image-dir}/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("#{$image-dir}/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -124,13 +130,13 @@
 .reviews__arrow {
   width: 131px;
   height: 53px;
+  background-repeat: no-repeat;
   background-color: inherit;
   background-position: center;
   border: 1px solid #ececec;
 
   &--left {
     background-image: url("#{$image-dir}/icon-left-arrow.svg");
-    background-repeat: no-repeat;
     border-right: 1px solid #ececec;
 
     @media (min-width: $tablet-width) {
@@ -140,12 +146,20 @@
 
   &--right {
     background-image: url("#{$image-dir}/icon-right-arrow.svg");
-    background-repeat: no-repeat;
     border-left: none;
 
     @media (min-width: $tablet-width) {
       padding-left: 81px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

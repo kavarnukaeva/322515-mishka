@@ -46,6 +46,15 @@
 .site-list__link {
   color: inherit;
   line-height: 1.4;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__icon {
@@ -55,11 +64,31 @@
   &--search {
     width: 18px;
     height: 19px;
+    fill: rgba(34, 31, 31, 0.2);
+
+    &:hover,
+    &:focus {
+      fill: $brand-color--light;
+    }
+
+    &:active {
+      fill: rgba($brand-color--light, 0.3);
+    }
   }
 
   &--cart {
     width: 21px;
     height: 18px;
+    fill: rgba(34, 31, 31, 0.2);
+
+    &:hover,
+    &:focus {
+      fill: $brand-color--light;
+    }
+
+    &:active {
+      fill: rgba($brand-color--light, 0.3);
+    }
   }
 }
 

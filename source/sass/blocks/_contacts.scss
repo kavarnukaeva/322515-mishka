@@ -2,11 +2,11 @@
   padding-top: 34px;
   padding-bottom: 39px;
 
-  @include centerer-nopaddings();
-
   @media (min-width: $tablet-width) {
     padding-top: 37px;
     padding-bottom: 57px;
+
+    @include centerer-nopaddings();
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +20,27 @@
 
 .contacts__main-wrapper {
   @include centerer;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: -14px;
+      right: 53px;
+      background-image: url("#{$image-dir}/icon-flag.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        top: 62px;
+        right: 0;
+        left: 114px;
+      }
+    }
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 67px;
@@ -111,6 +132,23 @@
       width: 200px;
     }
   }
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    &::before {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__field {
@@ -127,23 +165,39 @@
 }
 
 .contacts__map {
+  margin: 0 auto;
   margin-bottom: 35px;
   background-image: url("#{$image-dir}/map-mobile@1x.jpg");
   background-repeat: no-repeat;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("#{$image-dir}/map-mobile@2x.jpg");
+    background-size: 322px auto;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 51px;
     background-image: url("#{$image-dir}/map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("#{$image-dir}/map-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("#{$image-dir}/map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("#{$image-dir}/map-desktop@2x.jpg");
+      background-size: 525px auto;
+    }
   }
 }
 
 .contacts__map iframe {
   @media (max-width: 767px) {
-    width: 320px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
