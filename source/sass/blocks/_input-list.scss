@@ -5,6 +5,8 @@
 }
 
 .input-list__item {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -98,8 +100,24 @@
   }
 
   &:hover,
+  &:focus,
   &:active {
     border-color: $brand-color;
+
+    + .input-list__icon {
+      fill: $brand-color;
+    }
+  }
+}
+
+.input-list__icon {
+  position: absolute;
+  top: 33px;
+  right: 13px;
+  fill: rgba(0, 0, 0, 0.2);
+
+  @media (min-width: $tablet-width) {
+    top: 0;
   }
 }
 
@@ -116,6 +134,7 @@
 
 
   &:hover,
+  &:focus,
   &:active {
     border-color: $brand-color;
   }

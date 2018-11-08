@@ -50,7 +50,8 @@
     }
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border-color: $brand-color;
   }
 

@@ -133,7 +133,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #46c1ae;
 
     &::before {

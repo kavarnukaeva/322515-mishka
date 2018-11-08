@@ -54,11 +54,16 @@
     }
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     border: 2px solid rgba($gray--dark, 0.3);
   }
 
   &:active::after {
     border: 2px solid $brand-color;
   }
+}
+
+.sizes-list__input:checked + label::after {
+  border: 2px solid $brand-color;
 }

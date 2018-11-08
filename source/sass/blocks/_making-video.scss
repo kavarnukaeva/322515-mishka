@@ -112,7 +112,8 @@
     }
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     transform: scale(1.2);
   }
 
