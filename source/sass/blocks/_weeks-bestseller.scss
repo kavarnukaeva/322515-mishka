@@ -14,13 +14,11 @@
     height: 6px;
     background-image: url("#{$image-dir}/bg-zigzag-line.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    transform: rotate(180deg);
+    background-size: cover;
 
     @media (min-width: $tablet-width) {
       bottom: -8px;
       height: 17px;
-      background-size: cover;
     }
 
     @media (min-width: $desktop-width) {

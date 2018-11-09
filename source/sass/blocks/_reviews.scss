@@ -14,7 +14,7 @@
     height: 6px;
     background-image: url("#{$image-dir}/bg-zigzag-line.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     @media (min-width: $tablet-width) {
       bottom: 24px;
