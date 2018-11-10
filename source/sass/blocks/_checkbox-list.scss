@@ -34,7 +34,7 @@
 .checkbox-list__input:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 2px;
   left: -53px;
   width: 22px;
   height: 16px;
@@ -43,6 +43,7 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
+    top: 5px;
     left: -68px;
     width: 33px;
     height: 22px;
@@ -56,7 +57,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -8px;
+    bottom: -6px;
     left: -62px;
     width: 40px;
     height: 39px;

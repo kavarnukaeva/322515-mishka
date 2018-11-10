@@ -6,6 +6,7 @@
 
 .input-list__item {
   position: relative;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,6 +16,7 @@
     padding-top: 1px;
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 39px;
       padding-top: 0;
       padding-left: 34px;
     }
@@ -24,13 +26,21 @@
     }
   }
 
-  &--contacts .input-list__label {
-    @media (min-width: $tablet-width) {
-      margin-right: 43px;
+  &--contacts {
+    margin-bottom: 32px;
+
+    &.input-list__label {
+      @media (min-width: $tablet-width) {
+        margin-right: 43px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-right: 22px;
+      }
     }
 
-    @media (min-width: $desktop-width) {
-      margin-right: 22px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 39px;
     }
   }
 }
@@ -38,10 +48,11 @@
 
 .input-list__label {
   display: block;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 
   &--name {
     margin-right: 24px;
+    margin-bottom: 14px;
   }
 
   &--message {
@@ -57,7 +68,6 @@
 .input-list__input {
   display: block;
   width: 100%;
-  margin-bottom: 25px;
   padding-bottom: 16px;
   color: $gray--dark;
   background-color: inherit;
@@ -68,21 +78,16 @@
     @include placeholder();
   }
 
-  &--name {
-    margin-bottom: 23px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 39px;
-    }
-  }
-
   &--tel {
-    margin-bottom: 34px;
     padding-top: 6px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 40px;
+      margin-left: 43px;
       background-color: $gray;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 24px;
     }
   }
 
@@ -90,7 +95,12 @@
     padding-top: 6px;
 
     @media (min-width: $tablet-width) {
+      margin-left: 43px;
       background-color: $gray;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 24px;
     }
   }
 
@@ -112,12 +122,17 @@
 
 .input-list__icon {
   position: absolute;
-  top: 33px;
-  right: 13px;
+  top: 35px;
+  right: 6px;
   fill: rgba(0, 0, 0, 0.2);
 
   @media (min-width: $tablet-width) {
-    top: 0;
+    top: -2px;
+    right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 6px;
   }
 }
 

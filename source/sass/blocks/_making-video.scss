@@ -11,7 +11,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     padding-top: 3px;
-    padding-bottom: 76px;
+    padding-bottom: 78px;
 
     &::after {
       content: "";
@@ -109,6 +109,10 @@
     @media (min-width: $tablet-width) {
       left: 282px;
       bottom: 194px;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: 290px;
     }
   }
 

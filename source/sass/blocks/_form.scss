@@ -22,6 +22,7 @@
   @include centerer();
 
   @media (min-width: $tablet-width) {
+    padding-top: 31px;
     padding-bottom: 9px;
     font-size: $font-size--body;
   }
@@ -90,7 +91,7 @@
   }
 
   &--name {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
@@ -105,7 +106,7 @@
     margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 13px;
+      margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {

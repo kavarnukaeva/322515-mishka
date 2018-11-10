@@ -8,23 +8,25 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: -2px;
     left: -3px;
     width: 100%;
     height: 6px;
     background-image: url("#{$image-dir}/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    transform: rotate(180deg);
 
     @media (min-width: $tablet-width) {
-      bottom: -8px;
+      bottom: -6px;
       height: 17px;
+      background-size: contain;
     }
 
     @media (min-width: $desktop-width) {
       width: 1050px;
       height: 23px;
-      bottom: -97px;
+      bottom: -95px;
       left: 50px;
     }
   }
@@ -33,11 +35,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 35px;
+    padding-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 63px;
+    padding-top: 74px;
     padding-bottom: 191px;
   }
 }
@@ -90,7 +92,7 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 58px;
-    padding-left: 18px;
+    padding-left: 15px;
   }
 }
 
@@ -164,7 +166,7 @@
 .weeks-bestseller picture {
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 53px;
+    top: 64px;
     right: 49px;
   }
 }

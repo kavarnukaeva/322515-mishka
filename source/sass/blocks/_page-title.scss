@@ -42,7 +42,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 125px;
+      margin-bottom: 123px;
       padding-top: 92px;
       padding-bottom: 105px;
 
@@ -64,7 +64,7 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 42px;
       padding-top: 92px;
-      padding-bottom: 87px;
+      padding-bottom: 81px;
     }
 
     @media (min-width: $desktop-width) {
@@ -123,8 +123,9 @@
       background-size: contain;
 
       @media (min-width: $desktop-width) {
-        bottom: -15px;
+        bottom: -14px;
         height: 34px;
+        background-size: cover;
       }
     }
   }

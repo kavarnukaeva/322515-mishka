@@ -15,15 +15,16 @@
     background-image: url("#{$image-dir}/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    transform: rotate(180deg);
 
     @media (min-width: $tablet-width) {
       bottom: 24px;
       height: 17px;
-      background-size: cover;
+      background-size: contain;
     }
 
     @media (min-width: $desktop-width) {
-      bottom: -31px;
+      bottom: -29px;
       left: 50px;
       width: 1050px;
       height: 23px;
@@ -77,13 +78,14 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
+    margin-bottom: 25px;
     padding-top: 4px;
     font-size: $font-size--body;
     line-height: 1.8;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     padding-right: 100px;
   }
 }
@@ -123,7 +125,7 @@
 
   @media (min-width: $tablet-width) {
     order: 4;
-    margin-top: 30px;
+    margin-top: 34px;
   }
 }
 
