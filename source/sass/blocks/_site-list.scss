@@ -61,6 +61,11 @@
   position: absolute;
   left: 30px;
 
+  @media (min-width: $tablet-width) {
+    top: 33px;
+    left: 36px;
+  }
+
   &--search {
     width: 18px;
     height: 19px;
@@ -80,6 +85,11 @@
     width: 21px;
     height: 18px;
     fill: rgba(34, 31, 31, 0.2);
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+      left: 35px;
+    }
 
     &:hover,
     &:focus {
