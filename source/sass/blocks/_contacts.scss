@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 34px;
+  padding-top: 35px;
   padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
@@ -120,8 +120,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 23px;
-    left: 2px;
+    top: 24px;
+    left: 0;
     width: 177px;
     height: 1px;
     background-color: $brand-color;

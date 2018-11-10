@@ -174,7 +174,7 @@
   @media (min-width: $desktop-width) {
     order: 4;
     z-index: 1;
-    margin-bottom: -42px;
+    margin-bottom: -46px;
   }
 }
 
@@ -193,6 +193,11 @@
 .page-header__additional-nav-item {
   padding-top: 22px;
   padding-right: 60px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+    padding-right: 63px;
+  }
 }
 
 .page-header__delivery {
@@ -203,8 +208,8 @@
     order: 4;
     z-index: 1;
     margin: 0;
-    margin-bottom: -42px;
-    padding-top: 22px;
+    margin-bottom: -46px;
+    padding-top: 18px;
     font-size: 15px;
     line-height: 1.6;
     font-weight: $font-weight--secondary;

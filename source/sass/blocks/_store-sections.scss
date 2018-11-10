@@ -44,6 +44,16 @@
   line-height: 1.3;
   color: #ffffff;
 
+  @media (max-width: 767px) {
+    @include centerer-nopaddings();
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 120px 29px 36px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
   &--primary {
     background-color: $brand-color--light;
 
@@ -56,16 +66,21 @@
       background-image: url("#{$image-dir}/icon-interior.svg");
       background-repeat: no-repeat;
       opacity: 0.5;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+        right: 37px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 275px;
     }
 
     &:hover,
     &:focus,
     &:active {
       background-color: #59d5bc;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-right: 275px;
     }
   }
 
@@ -82,6 +97,15 @@
       background-image: url("#{$image-dir}/icon-toy.svg");
       background-repeat: no-repeat;
       opacity: 0.5;
+
+      @media (min-width: $tablet-width) {
+        top: 31px;
+        right: 34px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 315px;
     }
 
     &:hover,
@@ -89,19 +113,6 @@
     &:active {
       background-color: #46c1ae;
     }
-
-    @media (min-width: $desktop-width) {
-      padding-right: 315px;
-    }
-  }
-
-  @media (max-width: 767px) {
-    @include centerer-nopaddings();
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 1.5;
   }
 
   &:hover,

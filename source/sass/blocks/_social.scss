@@ -3,8 +3,10 @@
   border-bottom: 1px solid #ececec;
 
   @media (min-width: $tablet-width) {
+    padding-top: 26px;
     padding-right: 0;
     padding-left: 0;
+    border-bottom: none;
   }
 }
 
