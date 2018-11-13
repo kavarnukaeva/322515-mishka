@@ -29,6 +29,10 @@
   }
 }
 
+.radio-list__input:focus + .radio-list__label::before {
+  border-color: rgba($gray--dark, 0.3);
+}
+
 .radio-list__label {
   position: relative;
 

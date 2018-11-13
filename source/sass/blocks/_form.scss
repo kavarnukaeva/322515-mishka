@@ -10,31 +10,34 @@
   }
 }
 
-.form__intro {
-  margin: 0;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-size: 13px;
-  line-height: 1.8;
-  font-weight: $font-weight--secondary;
-  color: $gray--dark;
-
-  @include centerer();
-
-  @media (min-width: $tablet-width) {
-    padding-top: 31px;
-    padding-bottom: 9px;
-    font-size: $font-size--body;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 76px 225px 9px;
-  }
-}
+// .form__intro {
+//   margin: 0;
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+//   font-size: 13px;
+//   line-height: 1.8;
+//   font-weight: $font-weight--secondary;
+//   color: $gray--dark;
+//
+//   @include centerer();
+//
+//   @media (min-width: $tablet-width) {
+//     padding-top: 31px;
+//     padding-bottom: 9px;
+//     font-size: $font-size--body;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     padding: 76px 225px 9px;
+//   }
+// }
 
 .form__title {
   position: relative;
+  margin: 0;
   margin-bottom: 24px;
+  font-size: 17px;
+  font-weight: $font-weight--primary;
   color: $brand-color--light;
   text-transform: uppercase;
 
@@ -138,11 +141,10 @@
   }
 }
 
-.form fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
-
+.form__type,
+.form__color,
+.form__client-name,
+.form__client-contacts {
   @media (min-width: $tablet-width) {
     padding-top: 63px;
     padding-bottom: 13px;
@@ -151,6 +153,10 @@
 
 .form__type {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__color,
@@ -165,6 +171,63 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
+  }
+}
+
+.form__message-label {
+  display: block;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-top: 16px;
+  }
+}
+
+.form__message-input {
+  display: block;
+  width: 100%;
+  min-height: 142px;
+  margin-bottom: 16px;
+  padding-top: 13px;
+  padding-left: 15px;
+  color: $gray--dark;
+  background-color: inherit;
+  border: 2px solid $gray--dark;
+
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $brand-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-grow: 1;
+    width: auto;
+    margin-bottom: 0;
+    font-size: 19px;
+
+    &::placeholder {
+      @include placeholder();
+    }
+  }
+}
+
+.form__required-fileds {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: $font-weight--secondary;
+  color: $gray--dark;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+    font-size: $font-size--body;
+    line-height: 1.8;
   }
 }
 

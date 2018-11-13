@@ -55,14 +55,14 @@
     margin-bottom: 14px;
   }
 
-  &--message {
-    margin-bottom: 22px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 0;
-      padding-top: 16px;
-    }
-  }
+  // &--message {
+  //   margin-bottom: 22px;
+  //
+  //   @media (min-width: $tablet-width) {
+  //     margin-bottom: 0;
+  //     padding-top: 16px;
+  //   }
+  // }
 }
 
 .input-list__input {
@@ -136,49 +136,49 @@
   }
 }
 
-.input-list__message {
-  display: block;
-  width: 100%;
-  min-height: 142px;
-  margin-bottom: 16px;
-  padding-top: 13px;
-  padding-left: 15px;
-  color: $gray--dark;
-  background-color: inherit;
-  border: 2px solid $gray--dark;
+// .input-list__message {
+//   display: block;
+//   width: 100%;
+//   min-height: 142px;
+//   margin-bottom: 16px;
+//   padding-top: 13px;
+//   padding-left: 15px;
+//   color: $gray--dark;
+//   background-color: inherit;
+//   border: 2px solid $gray--dark;
+//
+//
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     border-color: $brand-color;
+//   }
+//
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//     flex-grow: 1;
+//     width: auto;
+//     margin-bottom: 0;
+//     font-size: 19px;
+//
+//     &::placeholder {
+//       @include placeholder();
+//     }
+//   }
+// }
 
-
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: $brand-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-grow: 1;
-    width: auto;
-    margin-bottom: 0;
-    font-size: 19px;
-
-    &::placeholder {
-      @include placeholder();
-    }
-  }
-}
-
-.input-list__required-fileds {
-  display: block;
-  margin-bottom: 32px;
-  font-size: 14px;
-  line-height: 1.1;
-  font-weight: $font-weight--secondary;
-  color: $gray--dark;
-
-  @media (min-width: $tablet-width) {
-    order: 1;
-    margin-bottom: 0;
-    font-size: $font-size--body;
-    line-height: 1.8;
-  }
-}
+// .input-list__required-fileds {
+//   display: block;
+//   margin-bottom: 32px;
+//   font-size: 14px;
+//   line-height: 1.1;
+//   font-weight: $font-weight--secondary;
+//   color: $gray--dark;
+//
+//   @media (min-width: $tablet-width) {
+//     order: 1;
+//     margin-bottom: 0;
+//     font-size: $font-size--body;
+//     line-height: 1.8;
+//   }
+// }

@@ -196,6 +196,8 @@
 }
 
 .contacts__map iframe {
+  border: none;
+
   @media (max-width: 767px) {
     width: 100%;
   }

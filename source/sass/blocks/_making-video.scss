@@ -22,6 +22,7 @@
 }
 
 .making-video__wrapper {
+  overflow: hidden;
   border: 1px solid #ececec;
 
   @media (min-width: $tablet-width) {

@@ -3,7 +3,18 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
+  }
+
+  &--additional-nav {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      font-size: 15px;
+      line-height: 1.6;
+    }
   }
 }
 
@@ -21,6 +32,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 31px;
+    padding-bottom: 34px;
   }
 
   &--search {
@@ -40,6 +52,17 @@
       padding-top: 31px;
       padding-left: 82px;
       border-left: 1px solid #ececec;
+    }
+  }
+
+  &--additional-nav {
+    padding-top: 22px;
+    padding-right: 60px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 20px;
+      padding-right: 63px;
+      padding-bottom: 0;
     }
   }
 }

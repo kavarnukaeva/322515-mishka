@@ -5,6 +5,7 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
 
@@ -56,11 +57,11 @@
         </ul>
       </nav>
       <div class="page-header__additional-nav-wrapper">
-        <ul class="page-header__additional-nav">
-          <li class="page-header__additional-nav-item">
+        <ul class="site-list site-list--additional-nav">
+          <li class="site-list__item site-list__item--additional-nav">
             <a href="#" class="site-list__link site-list__link--additional-item">Новые поступления</a>
           </li>
-          <li class="page-header__additional-nav-item">
+          <li class="site-list__item site-list__item--additional-nav">
             <a href="#" class="site-list__link site-list__link--additional-item">Распродажа</a>
           </li>
         </ul>
@@ -69,8 +70,8 @@
     </header>
 
     <main class="page-main">
-      <div class="page-title__wrapper page-title__wrapper--index">
-        <h1 class="page-title page-title--index">Милые штуки <span>ручной</span> работы для дома</h1>
+      <div class="page-main__title-wrapper page-main__title-wrapper--index">
+        <h1 class="page-main__title page-main__title--index">Милые штуки <span>ручной</span> работы для дома</h1>
       </div>
 
       <section class="store-sections">
@@ -179,7 +180,7 @@
         </div>
 
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056577!2d30.320853351481833!3d59.938719168965456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1540155732902" width="768" height="457" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056577!2d30.320853351481833!3d59.938719168965456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1540155732902" width="768" height="457" allowfullscreen=""></iframe>
         </div>
         <a href="#" class="ghost-button contacts__feedback-button">Напишите нам</a>
       </section>
@@ -199,7 +200,7 @@
             <li class="social__item">
               <a href="#" class="social__link social__link--instagram">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg class="social-link__icons" width="21.769px" height="21.334px">
+                <svg class="social__link-icons" width="21.769px" height="21.334px">
                   <use xlink:href="#sprite-icon-insta"></use>
                 </svg>
               </a>
@@ -207,7 +208,7 @@
             <li class="social__item">
               <a href="#" class="social__link social__link--facebook">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg class="social-link__icons" width="14.962px" height="27.718px">
+                <svg class="social__link-icons" width="14.962px" height="27.718px">
                   <use xlink:href="#sprite-icon-fb"></use>
                 </svg>
               </a>
@@ -215,7 +216,7 @@
             <li class="social__item">
               <a href="#" class="social__link social__link--twitter">
                 <span class="visually-hidden">Твиттер</span>
-                <svg class="social-link__icons" width="23.494px" height="20.168px">
+                <svg class="social__link-icons" width="23.494px" height="20.168px">
                   <use xlink:href="#sprite-icon-twitter"></use>
                 </svg>
               </a>
@@ -264,5 +265,9 @@
       </form>
     </section>
     <script src="js/script.js"></script>
+    <script>
+        document.createElement( "picture" );
+    </script>
+    <script src="picturefill.js" async></script>
   </body>
 </html>
