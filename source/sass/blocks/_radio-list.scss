@@ -30,7 +30,7 @@
 }
 
 .radio-list__input:focus + .radio-list__label::before {
-  border-color: rgba($gray--dark, 0.3);
+  border-color: $brand-color;
 }
 
 .radio-list__label {
@@ -54,8 +54,7 @@
     }
   }
 
-  &:hover::before,
-  &:focus::before {
+  &:hover::before {
     border-color: $brand-color;
   }
 

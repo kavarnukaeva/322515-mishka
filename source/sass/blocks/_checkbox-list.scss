@@ -52,7 +52,7 @@
 }
 
 .checkbox-list__input:focus + .checkbox-list__label::before {
-  border-color: rgba($gray--dark, 0.3);
+  border-color: $brand-color;
 }
 
 .checkbox-list__label {
@@ -75,8 +75,7 @@
     }
   }
 
-  &:hover::before,
-  &:focus::before {
+  &:hover::before {
     border-color: $brand-color;
   }
 
